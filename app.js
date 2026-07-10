@@ -70,7 +70,7 @@ function applyLanguage(language, shouldPersist = false) {
   });
 
   const usesChineseScreenshot = resolvedLanguage === "zh-Hans" || resolvedLanguage === "zh-Hant";
-  productShot.src = usesChineseScreenshot ? "assets/keylaunch-window-zh.png" : "assets/keylaunch-window-en.png";
+  productShot.src = usesChineseScreenshot ? "assets/keylaunch-window-zh.webp" : "assets/keylaunch-window-en.webp";
   productShot.alt = strings?.["shot.alt"] ?? "键启应用界面，键盘上设置了多个 macOS 系统 App 快捷键";
 
   document.title = strings?.["meta.title"] ?? "KeyLaunch — 一键启动常用 App";
