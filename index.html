@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KeyLaunch 是一款轻量级 macOS 键盘启动器，让常用 App 一键即达。">
-  <meta name="theme-color" content="#f7f8fc">
-  <title>KeyLaunch — 一键启动常用 App</title>
+  <meta name="description" content="键启是一个原生 macOS 键盘启动器，把常用 App 放到你的键盘上，按键即可启动、切换或隐藏。">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta property="og:title" content="键启 — 把常用 App 放到键盘上">
+  <meta property="og:description" content="用熟悉的按键启动、切换和隐藏 App，不打断当前思路。">
+  <meta property="og:image" content="assets/keylaunch-window-zh.webp">
+  <title>键启 — 把常用 App 放到键盘上</title>
   <link rel="icon" href="assets/keylaunch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -41,9 +44,9 @@
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow" data-i18n="hero.eyebrow">为 macOS 键盘用户打造</p>
-        <h1 data-i18n-html="hero.title">你的常用 App，<br><span>一键即达。</span></h1>
-        <p class="hero-lede" data-i18n="hero.lede">把 Safari、邮件、日历和工作工具放到键盘上。按下快捷键，立即启动、切换或隐藏 App，不打断当前思路。</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">原生 macOS 键盘启动器</p>
+        <h1 data-i18n-html="hero.title">把常用 App，<br><span>放到键盘上。</span></h1>
+        <p class="hero-lede" data-i18n="hero.lede">在一张清晰的键盘上安排你的 App。按下熟悉的按键，立即启动、切换或隐藏，不打断当前思路。</p>
         <div class="hero-actions">
           <a class="primary-button" data-app-store-link href="https://apps.apple.com/cn/app/%E9%94%AE%E5%90%AF/id6759540480?mt=12">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.7 12.9c0-3.2 2.6-4.8 2.7-4.9a5.8 5.8 0 0 0-4.5-2.4c-1.9-.2-3.8 1.1-4.7 1.1-.9 0-2.4-1.1-4-1-2 .1-3.9 1.2-5 3-2.1 3.6-.5 9 1.5 12 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 4-1 1.8 0 2.4 1 4 1 1.7 0 2.8-1.5 3.8-3a13 13 0 0 0 1.7-3.5 5.2 5.2 0 0 1-3.3-4.3ZM15.7 3.6A5.2 5.2 0 0 0 17 0a5.3 5.3 0 0 0-3.4 1.8 4.9 4.9 0 0 0-1.3 3.5c1.3.1 2.6-.6 3.4-1.7Z"/></svg>
@@ -51,7 +54,7 @@
           </a>
           <a class="text-link" href="#demo"><span data-i18n="hero.try">查看 App</span><span aria-hidden="true">↓</span></a>
         </div>
-        <p class="requirements" data-i18n="hero.requirements">支持 macOS 13 及以上版本 · 8 种语言</p>
+        <p class="requirements" data-i18n="hero.requirements">支持 macOS 13 及以上版本 · 8 种语言 · 数据只保存在本机</p>
       </div>
 
       <div class="keyboard-stage reveal" id="demo" aria-label="KeyLaunch 交互演示">
@@ -73,12 +76,12 @@
 
     <section class="section shell" id="features">
       <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="features.eyebrow">不只是一枚快捷键</p>
-        <h2 data-i18n-html="features.title">减少寻找，<br>把注意力留给工作。</h2>
+        <p class="eyebrow" data-i18n="features.eyebrow">主界面，一眼看懂</p>
+        <h2 data-i18n-html="features.title">把键盘变成<br>你的 App 地图。</h2>
       </div>
       <div class="feature-grid">
         <article class="feature feature-wide reveal">
-          <div class="feature-copy"><span class="feature-icon">⌘</span><h3 data-i18n="features.bind.title">一套键盘，多种工作方式</h3><p data-i18n="features.bind.body">支持 Option、Command、Control 和 Shift。为同一个按键设置多组组合，按照你的肌肉记忆组织 App。</p></div>
+          <div class="feature-copy"><span class="feature-icon">⌘</span><h3 data-i18n="features.bind.title">修饰键，让布局更自由</h3><p data-i18n="features.bind.body">在主界面直接筛选 Option、Command、Control 和 Shift。为同一个按键设置多组组合，按照你的肌肉记忆组织 App。</p></div>
           <div class="chord-visual"><kbd>⌥</kbd><b>+</b><kbd>F</kbd><span>Finder</span></div>
         </article>
         <article class="feature reveal"><span class="feature-icon">↗</span><h3 data-i18n="features.toggle.title">启动、切换，也能隐藏</h3><p data-i18n="features.toggle.body">App 未打开时启动，已打开时带到前台，已经在前台时再次按下即可隐藏。</p></article>
